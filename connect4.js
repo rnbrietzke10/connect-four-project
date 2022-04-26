@@ -32,13 +32,13 @@ function makeHtmlBoard() {
   // COMPLETED:
   // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
   const htmlBoard = document.getElementById('board');
-  // COMPLETED: GO BACK AND CHECK COMMENTS
+  // COMPLETED:
   // TODO: add comment for this code
   //Create top row of table
   const top = document.createElement('tr');
   top.setAttribute('id', 'column-top');
   top.addEventListener('click', handleClick);
-  // COMPLETED: GO BACK AND CHECK COMMENTS
+  // COMPLETED:
   // Create board cells based on WIDTH and add it to the top row
   for (let x = 0; x < WIDTH; x++) {
     const headCell = document.createElement('td');
@@ -46,7 +46,7 @@ function makeHtmlBoard() {
     top.append(headCell);
   }
   htmlBoard.append(top);
-  // COMPLETED: GO BACK AND CHECK COMMENTS
+  // COMPLETED:
   // TODO: add comment for this code
   // Create board rows based on specified HEIGHT
   for (let y = 0; y < HEIGHT; y++) {
